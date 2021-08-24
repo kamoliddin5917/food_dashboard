@@ -1,0 +1,110 @@
+@import "../../scss/colors.scss";
+
+.homeright {
+  width: 30%;
+  background-color: $bg-main;
+  padding: 20px;
+  border-radius: 8px;
+
+  &__h3 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+    margin-bottom: 15px;
+  }
+
+  &__buttons {
+    margin-bottom: 15px;
+
+    &-btn {
+      display: inline-block;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 140%;
+      border: 1px solid #393C49;
+      border-radius: .5rem;
+      color: $color-main;
+      background-color: transparent;
+      padding: 7px 12px;
+      margin-right: 8px;
+      cursor: pointer;
+      transition: all .4s;
+
+      &:hover {
+        background-color: $color-main;
+        color: $color-white;
+      }
+    }
+  }
+
+  &__inform {
+    display: flex;
+    align-items: center;
+
+    &-item {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 140%;
+      text-transform: capitalize;
+
+      &:nth-child(2) {
+        margin-left: auto;
+        margin-right: 40px;
+      }
+    }
+  }
+
+  &__box {
+    list-style: none;
+    height: 53vh;
+    overflow-y: auto;
+    border-top: 1px solid #393C49;
+    border-bottom: 1px solid #393C49;
+    padding-top: 10px;
+    margin-top: 10px;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  &__price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 10px;
+
+    &-text {
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 140%;
+      color: #ABBBC2;
+    }
+
+    &-sum {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 140%;
+    }
+  }
+
+  &__btn {
+    outline: none;
+    border: none;
+    display: inline-block;
+    width: 100%;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    box-shadow: 0px 8px 24px rgba(234, 124, 105, 0.3);
+    border-radius: 8px;
+    background-color: $color-main;
+    color: inherit;
+    padding: 14px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+}

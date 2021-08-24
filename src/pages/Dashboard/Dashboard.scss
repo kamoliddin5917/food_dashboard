@@ -1,0 +1,199 @@
+@import "../../scss/colors.scss";
+
+.dashboard {
+  padding: 20px;
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  justify-content: space-between;
+
+  &__main {
+    width: 68%;
+    height: 100%;
+
+    &-header {
+      border-bottom: 1px solid #393C49;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+    }
+
+    &-h1 {
+      font-weight: 600;
+      font-size: 28px;
+      line-height: 140%;
+      text-transform: capitalize;
+    }
+
+    &-data {
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 140%;
+      opacity: .7;
+    }
+
+    &-calculation {
+      display: flex;
+      justify-content: space-between;
+
+      list-style: none;
+
+      &-list {
+        width: 30%;
+        padding: 1rem;
+        background-color: $bg-main;
+        border-radius: .5rem;
+
+        &:nth-child(2) .dashboard__main-calculation-list-p {
+          color: #FF7CA3;
+        }
+
+        &:nth-child(2) .dashboard__main-calculation-list-arrow {
+          background: rgba(255, 100, 113, 0.24);
+          transform: rotate(180deg);
+
+          path {
+            fill: #FF7CA3;
+          }
+        }
+
+        &:nth-child(2) .dashboard__main-calculation-list-icon {
+          background: url(../../img/post-icon.png), $bg-secondary;
+          background-repeat: no-repeat;
+          background-size: 16px 20px, cover;
+          background-position: center;
+        }
+
+        &:nth-child(3) .dashboard__main-calculation-list-icon {
+          background: url(../../img/contact-icon.png), $bg-secondary;
+          background-repeat: no-repeat;
+          background-size: 20px 20px, cover;
+          background-position: center;
+        }
+
+        &-top {
+          display: flex;
+          align-items: center;
+
+          margin-bottom: 4px;
+        }
+
+        &-icon {
+          width: 38px;
+          height: 38px;
+          border-radius: 8px;
+          background: url(../../img/dollor-icon.png), $bg-secondary;
+          background-repeat: no-repeat;
+          background-size: 20px 20px, cover;
+          background-position: center;
+          margin-right: 12px;
+        }
+
+        &-p {
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 140%;
+          color: #50D1AA;
+          margin-right: 6px;
+        }
+
+        &-arrow {
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          background: rgba(136, 224, 145, 0.24);
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        &-summ {
+          font-weight: 600;
+          font-size: 28px;
+          line-height: 140%;
+          margin-bottom: 4px;
+        }
+
+        &-howto {
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 130%;
+          opacity: .7;
+        }
+      }
+    }
+
+    &-order {
+      width: 100%;
+      border-radius: .5rem;
+      background-color: $bg-main;
+      margin-top: 10px;
+
+
+      &-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 24px;
+
+
+        &-title {
+          text-transform: capitalize;
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 140%;
+        }
+
+        &-filter {
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 130%;
+          padding: 14px;
+          padding-left: 44px;
+          background: url(../../img/filter-icon.png);
+          background-repeat: no-repeat;
+          background-size: 16px 16px;
+          background-position: left 15px center;
+          border: 1px solid #393C49;
+          border-radius: 8px;
+          cursor: pointer;
+        }
+      }
+
+      &-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 24px 10px 24px;
+        border-bottom: 1px solid #393C49;
+        list-style: none;
+
+        &-list {
+          width: 24%;
+          text-transform: capitalize;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 140%;
+        }
+      }
+    }
+
+    &-persons {
+      list-style: none;
+      padding: 10px 24px;
+      height: 43vh;
+      overflow: auto;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+  }
+
+  &__right {
+    width: 30%;
+    height: 100%;
+    padding-bottom: 10px;
+  }
+}

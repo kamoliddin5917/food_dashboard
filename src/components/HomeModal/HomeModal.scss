@@ -1,0 +1,204 @@
+@import "../../scss/colors.scss";
+
+.homemodal {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, .7);
+
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 7;
+
+  opacity: 0;
+  visibility: hidden;
+
+
+  &__active {
+    opacity: 1;
+    visibility: visible;
+    transition: all .4s;
+  }
+
+  &__form {
+    width: 30%;
+    background-color: $bg-main;
+    height: 100%;
+    border-radius: 16px;
+    margin-left: auto;
+    padding: 20px;
+
+    position: relative;
+
+    &-input {
+      display: inline-block;
+      width: 100%;
+      border-radius: 8px;
+      background-color: $bg-secondary;
+      border: none;
+      outline: none;
+      padding: 10px;
+      margin-bottom: 5px;
+
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 140%;
+      color: inherit;
+
+      &::placeholder {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 140%;
+        color: inherit;
+        opacity: .5;
+      }
+
+      &_text {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 130%;
+        margin-bottom: 4px;
+      }
+    }
+
+    &-bottom {
+      &_ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      &_list {
+        width: 48%;
+      }
+    }
+
+    &-select {
+      background-color: $bg-main;
+      color: inherit;
+      border-radius: .5rem;
+      outline: none;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 130%;
+      padding: 10px;
+      width: 100%;
+      opacity: .5;
+    }
+
+    &-buttons {
+      width: 90%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      position: absolute;
+      bottom: 20px;
+    }
+
+    &-btn {
+      display: block;
+      width: 48%;
+      padding: 14px;
+      color: $color-main;
+      border: 1px solid $color-main;
+      border-radius: 8px;
+      background-color: transparent;
+      cursor: pointer;
+
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 140%;
+
+      transition: all .4s;
+
+      &:hover {
+        background-color: $color-main;
+        color: $color-white;
+        box-shadow: 0px 8px 24px rgba(234, 124, 105, 0.4);
+      }
+    }
+  }
+
+  &__h1 {
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 140%;
+    margin-bottom: 0.5rem;
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 140%;
+    color: #ABBBC2;
+    border-bottom: 1px solid #393C49;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+
+  &__payment_method {
+    &-header {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 140%;
+      text-transform: capitalize;
+      margin-bottom: 5px;
+    }
+
+    &-box {
+      display: flex;
+      justify-content: space-between;
+      align-items: stretch;
+
+      list-style: none;
+      margin-bottom: 5px;
+    }
+
+    &-radio {
+      display: none;
+
+      &:checked+label {
+        border: 1px solid $color-white;
+        color: $color-white;
+        background: url(../../img/radio-icon.png), $bg-secondary;
+        background-repeat: no-repeat;
+        background-size: 16px 16px, cover;
+        background-position: right 6px top 6px, center;
+        transition: color .4s;
+      }
+
+      &:checked+label {
+        path {
+          fill: $color-white;
+          transition: all .4s;
+        }
+      }
+    }
+
+    &-label {
+      display: inline-block;
+      width: 100px;
+      height: 100%;
+      min-height: 64px;
+      padding-top: 1rem;
+      padding-bottom: 10px;
+      text-align: center;
+      border: 1px solid #393C49;
+      border-radius: .5rem;
+      cursor: pointer;
+      color: #ABBBC2;
+
+      &-text {
+        display: block;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 130%;
+        text-transform: capitalize;
+      }
+    }
+  }
+}

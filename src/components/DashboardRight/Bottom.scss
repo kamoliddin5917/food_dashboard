@@ -1,0 +1,151 @@
+@import "../../scss/colors.scss";
+
+.bottom {
+  background-color: $bg-main;
+  padding: 8px 0;
+  border-radius: 8px;
+  height: 255px;
+  overflow-y: hidden;
+
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-bottom: 1px solid #393C49;
+    padding: 0 1.5rem;
+    padding-bottom: 10px;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+  }
+
+  &__select {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
+    text-transform: capitalize;
+    border: 1px solid #393C49;
+    border-radius: 8px;
+    outline: none;
+    padding: 14px;
+    background: transparent;
+    color: inherit;
+    cursor: pointer;
+
+
+    option {
+      background-color: gold;
+      color: $color-main;
+      display: inline-block;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 130%;
+      text-transform: capitalize;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 1.5rem;
+    margin-top: 8px;
+  }
+
+  &__circle {
+    border: 12px solid #000;
+    border-radius: 50%;
+
+    position: relative;
+
+    &-1 {
+      width: 174px;
+      height: 174px;
+      border-color: #65B0F6;
+      border-left: 12px solid rgba(0, 0, 0, .2);
+      transform: rotate(45deg);
+    }
+
+    &-2 {
+      width: 150px;
+      height: 150px;
+      border-color: #FFB572;
+      border-left: 12px solid rgba(0, 0, 0, .4);
+      border-bottom: 12px solid rgba(0, 0, 0, .4);
+    }
+
+    &-3 {
+      width: 128px;
+      height: 128px;
+      border-color: #FF7CA3;
+      border-left: 12px solid rgba(0, 0, 0, .2);
+    }
+
+    &-4 {
+      width: 105px;
+      height: 105px;
+      border-color: $bg-secondary;
+    }
+  }
+
+  &__status {
+    &-list {
+      margin-bottom: 1rem;
+      display: flex;
+
+      &::before {
+        content: "";
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: #fff;
+        margin-right: 5px;
+      }
+
+      &:nth-child(1) {
+        &::before {
+          background: #FF7CA3;
+        }
+      }
+
+      &:nth-child(2) {
+        &::before {
+          background: #FFB572;
+        }
+      }
+
+      &:nth-child(3) {
+        &::before {
+          background: #65B0F6;
+        }
+      }
+    }
+
+    &-text {
+
+
+      &-title {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 130%;
+        text-transform: capitalize;
+      }
+
+      &-summ {
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 140%;
+        opacity: .7;
+      }
+    }
+  }
+
+}

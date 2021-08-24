@@ -1,0 +1,12 @@
+@import "./scss/fonts.scss";
+@import "./scss/colors.scss";
+
+.app {
+  display: flex;
+  width: 100%;
+  background-color: $bg-secondary;
+  color: $color-white;
+
+  position: relative;
+  z-index: 5;
+}

@@ -1,0 +1,12 @@
+@import "../../scss/colors.scss";
+
+.settings {
+  padding: 10px 1.5rem;
+
+  &__title {
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 140%;
+  }
+}

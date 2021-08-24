@@ -1,0 +1,46 @@
+@import "../../scss/colors.scss";
+
+.food {
+  width: 190px;
+  background-color: $bg-main;
+  border-radius: 1rem;
+  padding: 24px;
+  padding-top: 114px;
+  text-align: center;
+  margin-bottom: 58px;
+  cursor: pointer;
+
+  position: relative;
+
+  &__img {
+    display: inline-block;
+    width: 132px;
+    height: 132px;
+
+    position: absolute;
+    top: -34px;
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  &__name {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
+  }
+
+  &__price {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+    margin-top: 0.5rem;
+    margin-bottom: .2rem;
+  }
+
+  &__how_many {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+    color: #ABBBC2;
+  }
+}

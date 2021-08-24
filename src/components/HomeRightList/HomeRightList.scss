@@ -1,0 +1,113 @@
+@import "../../scss/colors.scss";
+
+.homerightlist {
+  margin-bottom: 20px;
+
+  &__top {
+    display: flex;
+    align-items: center;
+  }
+
+  &__img {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+  }
+
+  &__text {
+    width: 40%;
+    overflow: hidden;
+    margin-left: 8px;
+  }
+
+  &__name {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
+    height: 20px;
+    overflow: hidden;
+  }
+
+  &__price {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 140%;
+    opacity: .7;
+
+    &-all {
+      width: 60px;
+      text-align: end;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 140%;
+      // margin-left: 20px;
+    }
+  }
+
+  &__summa {
+    border: 1px solid #393C49;
+    outline: none;
+    display: inline-block;
+    background-color: $bg-secondary;
+    width: 40px;
+    height: 40px;
+    color: inherit;
+    border-radius: .5rem;
+    margin-left: auto;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__bottom {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__input {
+    display: inline-block;
+    padding: 14px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+    color: inherit;
+    background-color: $bg-secondary;
+    margin-right: auto;
+    width: 82%;
+
+    border-radius: 8px;
+    border: none;
+    outline: none;
+
+    &::placeholder {
+      color: #E0E6E9;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 140%;
+    }
+  }
+
+  &__btn {
+    border: 1px solid #FF7CA3;
+    border-radius: .5rem;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    cursor: pointer;
+
+    &-icon {
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
